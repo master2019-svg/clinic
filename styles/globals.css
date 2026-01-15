@@ -1,0 +1,46 @@
+/* استيراد أساسيات Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* إعدادات الصفحة العامة */
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 15, 23, 42; /* لون الخلفية الغامق */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* تحسين شكل الـ Scrollbar عشان يليق مع التصميم الـ 3D */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* تأثيرات إضافية للحقول (Inputs) */
+input, select {
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
